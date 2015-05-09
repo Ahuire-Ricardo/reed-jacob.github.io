@@ -187,7 +187,7 @@ a {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: #159957; }
+  color: #198b9b; }
 .main-content p {
   margin-bottom: 1em; }
 .main-content code {
@@ -202,7 +202,7 @@ a {
   margin-top: 0;
   margin-bottom: 1rem;
   font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  color: #567482;
+  color: #198b9b;
   word-wrap: normal;
   background-color: #f3f6fa;
   border: solid 1px #dce6f0;
