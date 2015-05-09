@@ -7,6 +7,7 @@
 	margin-left: auto;
     	margin-right: auto;
 	text-align: center;
+	position: relative;
 }
 
 #primary_nav_wrap ul
@@ -37,7 +38,7 @@
 
 #primary_nav_wrap ul li:hover
 {
-	background:#ddd
+	background:#B1B1B1
 }
 
 #primary_nav_wrap ul ul
