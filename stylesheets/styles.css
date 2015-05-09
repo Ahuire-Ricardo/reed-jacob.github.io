@@ -2,7 +2,8 @@
 
 #primary_nav_wrap
 {
-	margin-top:15px
+	margin-top:15px;
+	position:center
 }
 
 #primary_nav_wrap ul
@@ -33,7 +34,7 @@
 
 #primary_nav_wrap ul li:hover
 {
-	background:#f6f6f6
+	background:#ddd
 }
 
 #primary_nav_wrap ul ul
@@ -66,7 +67,8 @@
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block
+	display:block;
+  background:#ddd
 }
 
 body {
