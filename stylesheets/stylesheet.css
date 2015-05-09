@@ -3,29 +3,28 @@
 
 ##primary_nav_wrap
 {
-	margin-top:5px;
-	margin-left: auto;
-    	margin-right: auto;
+	margin-top:1px;
 	text-align: center;
-	position: relative;
+	display: inline-block;
 }
 
 #primary_nav_wrap ul
 {
 	list-style:none;
-	position:relative;
-	float:left;
 	margin:0;
-	padding:0
+	padding:0;
+	text-align: center;
+	display: inline-block;
 }
 
 #primary_nav_wrap ul a
 {
-	display:block;
+	display:inline-block;
 	color:#ffffff;
 	text-decoration:none;
 	line-height:32px;
 	padding:0 15px;
+	margin: 0 auto;
 }
 
 #primary_nav_wrap ul li
@@ -34,6 +33,7 @@
 	float:left;
 	margin:0;
 	padding:0
+	text-align: center;
 }
 
 #primary_nav_wrap ul li:hover
@@ -71,8 +71,9 @@
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block;
-  background:#8F8F8F
+	display:inline-block;
+  	background:#8F8F8F
+	
 }
 
 body {
