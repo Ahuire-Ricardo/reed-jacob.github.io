@@ -78,14 +78,36 @@
               <p>All cars have the same <strong>methods</strong>, but the methods are performed at different times.</p>
         </blockquote>
           
-        <p>JavaScript 
+        <p>JavaScript has a number of predefined objects. Additionally, we are free to make our own objects. In order to create an object, you must first initilize it.
         <p>Explanation.</p>
-          <pre><code>$ cd your_repo_root/repo_name
-          $ git fetch origin
-          $ git checkout gh-pages
-          </code></pre>
-        <p>More explanation.</p>
 
+          <pre><code data-language="javascript">
+            // Here, we demo a prototype for an object titled "car". This first section is called a "constructor function".
+            // It allows for us to assign values to the object's propeties.
+
+            function Car(make, model, year, color) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.color = color;
+            }
+
+            // New objects can be created that follow the constructor function.
+
+            var myCar = new Car("Honda", "Civic", "2004", "Black");
+            var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "Blue");
+
+            // Here's an example of displaying this newly assigned information in an HTML format:
+
+            document.getElementById("demo").innerHTML = "I own a " + myCar.color + " " + myCar.make + " " + myCar.model + "."
+                + "He's a little bit older, he was made in " + this.year + "."
+                + "My wife's car is a " + myWifesCar.color + " " + myWifesCar.make + " " + myWifesCar.model + "."
+                + "She's got one year on my " +  myCar.make + "! It was made in " + myWifesCar.year;
+            </code></pre>
+
+        <p>Output:</p>
+        <div id="demo"></div>
+        
       <footer class="site-footer">
 
         <h6><span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span></h6>
