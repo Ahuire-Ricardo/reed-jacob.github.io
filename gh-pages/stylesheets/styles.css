@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
-#primary_nav_wrap
+##primary_nav_wrap
 {
 	margin-top:5px;
 	margin-left: auto;
@@ -16,11 +16,12 @@
 	float:left;
 	margin:0;
 	padding:0
+	text-align: center;
 }
 
 #primary_nav_wrap ul a
 {
-	display:block;
+	display:inline-block;
 	color:#ffffff;
 	text-decoration:none;
 	line-height:32px;
@@ -33,6 +34,7 @@
 	float:left;
 	margin:0;
 	padding:0
+	text-align: center;
 }
 
 #primary_nav_wrap ul li:hover
@@ -70,9 +72,11 @@
 
 #primary_nav_wrap ul li:hover > ul
 {
-	display:block;
-  background:#8F8F8F
+	display:inline-block;
+  	background:#8F8F8F
+	
 }
+
 
 body {
   padding:50px;
