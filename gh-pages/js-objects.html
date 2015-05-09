@@ -94,20 +94,21 @@
 
             // New objects can be created that follow the constructor function.
 
-            var myCar = new Car("Honda", "Civic", "2004", "Black");
-            var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "Blue");
+            var myCar = new Car("Honda", "Civic", "2004", "black");
+            var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "blue");
 
             // Here's an example of displaying this newly assigned information in an HTML format:
 
             document.getElementById("demo").innerHTML = "I own a " + myCar.color + " " + myCar.make + " " + myCar.model + "."
                 + "He's a little bit older, he was made in " + this.year + "."
                 + "My wife's car is a " + myWifesCar.color + " " + myWifesCar.make + " " + myWifesCar.model + "."
-                + "She's got one year on my " +  myCar.make + "! It was made in " + myWifesCar.year;
+                + "She's got one year on my " +  myCar.model + "! Her's was made in " + myWifesCar.year;
             </code></pre>
 
         <p>Output:</p>
-        <div id="demo"></div>
-        
+        <pre><code>I own a black Honda Civic. He's a little bit older, he was made in 2004. My wife's care is a blue Chevrolet Avalanche. She's got one year on my Civic! Her's was made in 2005.</code></pre>
+
+
       <footer class="site-footer">
 
         <h6><span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span></h6>
