@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+
 ##primary_nav_wrap
 {
 	margin-top:5px;
 	margin-left: auto;
     	margin-right: auto;
 	text-align: center;
-	position: relative;
+	display: inline-block;
 }
 
 #primary_nav_wrap ul
@@ -17,6 +18,8 @@
 	margin:0;
 	padding:0
 	text-align: center;
+	margin: 0 auto;
+	display: inline-block;
 }
 
 #primary_nav_wrap ul a
@@ -26,6 +29,7 @@
 	text-decoration:none;
 	line-height:32px;
 	padding:0 15px;
+	margin: 0 auto;
 }
 
 #primary_nav_wrap ul li
