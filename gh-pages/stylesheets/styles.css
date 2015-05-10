@@ -1,12 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+
 ##primary_nav_wrap
 {
 	margin-top:5px;
 	margin-left: auto;
     	margin-right: auto;
 	text-align: center;
-	position: relative;
+	display: inline-block;
 }
 
 #primary_nav_wrap ul
@@ -28,6 +29,7 @@
 	text-decoration:none;
 	line-height:32px;
 	padding:0 15px;
+	margin: 0 auto;
 }
 
 #primary_nav_wrap ul li
@@ -140,11 +142,11 @@ blockquote {
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color:#333;
-  font-size:10px;
+  font-size:12px;
 }
 
 pre {
-  padding:2px 4px;
+  padding:8px 15px;
   background: #f8f8f8;  
   border-radius:5px;
   border:1px solid #e5e5e5;
