@@ -40,15 +40,15 @@
         <h6>May 15th, 2015</h6>
 
       <h2>What is "JSON"?</h2>
-        <p>JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation. "JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null." (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">mozilla.org</a>) "JSON uses JavaScript syntax, but the JSON format is text only, just like XML." (<a href="http://www.w3schools.com/json/">w3schools</a>). Unlike <a href="http://www.w3schools.com/xml/xml_whatis.asp">XML</a>, JSON is shorter, can use arrays, and is quicker to read and write data. Here's an example of utilizing JSON to create JavaScript objects:</p>
+        <p>JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation. JSON is a syntax for serializing objects, arrays, numbers, strings, booleans, and null. JSON uses JavaScript syntax, but the JSON format is text only, just like XML. Unlike <a href="http://www.w3schools.com/xml/xml_whatis.asp">XML</a>, JSON is shorter, can use arrays, and is quicker to read and write data. Here's an example of utilizing JSON to create JavaScript objects:</p>
 
           <pre><code data-language="javascript">
-// Like an array, multiple objects can be stored within the "text" variable.
-// Commas are used to separate assignments.
-var text = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
+// JSON objects are written within curly braces. Objects can contain multiple values.
+// Commas are used to separate assignments (name:value).
+var info = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
 
 // This parses our variable, "obj", as a string in JSON.
-var obj = JSON.parse(text);
+var obj = JSON.parse(info);
 
 // Here we print out our object and it's separate values.
 document.getElementById("demo").innerHTML =
@@ -60,12 +60,12 @@ obj.zip;
 
         <h3>Output:</h3>
         <script>
-          var text = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
+          var info = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
 
           var obj = JSON.parse(text);
           
           function printInfo() {
-          document.getElementById("demo").innerHTML =
+          document.getElementById("info").innerHTML =
           obj.name + "<br>" +
           obj.street + "<br>" +
           obj.zip;
@@ -80,7 +80,7 @@ obj.zip;
       <h3>Sources:</h3>
         <ul>
           <li><a href="http://www.w3schools.com/json/default.asp">W3 Schools</a></li>
-          <li><a href="http://www.devx.com/projectcool/Article/19993">DevX</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">Mozilla Developers</a></li>
         </ul>
 
       <footer class="site-footer">
