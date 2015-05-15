@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
+pre > code {
+    white-space: pre;
+    margin-left: -1.00em;
+    display: block;
+}
+
 
 ##primary_nav_wrap
 {
