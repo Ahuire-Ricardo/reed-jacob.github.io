@@ -106,7 +106,7 @@
             </code></pre>
 
         <p>Output:</p>
-        <blockquote><script>
+        <script>
             function Car(make, model, year, color) {
                 this.make = make;
                 this.model = model;
@@ -114,17 +114,22 @@
                 this.color = color;
             }
 
-
             var myCar = new Car("Honda", "Civic", "2004", "black");
             var myWifesCar = new Car("Chevrolet", "Avalanche", "2005", "blue");
 
+            function printCar() {
             document.getElementById("demo").innerHTML = "I own a " + myCar.color + " " + myCar.make + " " + myCar.model + "."
                 + " He's a little bit older, he was made in " + myCar.year + "."
                 + " My wife's car is a " + myWifesCar.color + " " + myWifesCar.make + " " + myWifesCar.model + "."
                 + " She's got one year on my " +  myCar.model + "! Her's was made in " + myWifesCar.year + ".";
+              }
         </script>
+
+        <button onclick="myFunction()">Click me</button>
+        
+      <blockquote id="demo">
       </blockquote>
-      
+
       <h3>Sources:</h3>
         <ul>
           <li><a href="http://www.w3schools.com/js/js_objects.asp">W3 Schools</a></li>
