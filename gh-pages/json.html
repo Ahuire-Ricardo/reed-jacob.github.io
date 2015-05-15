@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>J. Reed's Portfolio</title>
+    <title>JavaScript Objects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -37,20 +37,49 @@
 
     <section class="main-content">
       <h1>JSON</h1>
-        <h6>May 9th, 2015</h6>
+        <h6>May 15th, 2015</h6>
 
-        <p>Temp.</p>
+      <h2>What is "JSON"?</h2>
+        <p>JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation. "JSON uses JavaScript syntax, but the JSON format is text only, just like XML." (<a href="http://www.w3schools.com/json/">w3schools</a>). Unlike <a href="http://www.w3schools.com/xml/xml_whatis.asp">XML</a>, JSON is shorter, can use arrays, and is quicker to read and write data. Here's an example of utilizing JSON to create JavaScript objects:</p>
 
-          <blockquote><p>Quoted text.</p>
-          </blockquote>
+          <pre><code data-language="javascript">
+//
+var text = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML =
+obj.name + "<br>" +
+obj.street + "<br>" +
+obj.zip;
+
+            </code></pre>
+
+        <h3>Output:</h3>
+        <script>
+          var text = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}';
+
+          var obj = JSON.parse(text);
           
-        <p>Explanation.</p>
-          <pre><code>$ cd your_repo_root/repo_name
-          $ git fetch origin
-          $ git checkout gh-pages
-          </code></pre>
-        <p>More explanation.</p>
-        
+          function printInfo() {
+          document.getElementById("demo").innerHTML =
+          obj.name + "<br>" +
+          obj.street + "<br>" +
+          obj.zip;
+              }
+        </script>
+
+        <button onclick="printInfo()">Click me</button>
+
+      <blockquote id="demo">
+      </blockquote>
+
+      <h3>Sources:</h3>
+        <ul>
+          <li><a href="http://www.w3schools.com/json/default.asp">W3 Schools</a></li>
+          <li><a href="http://www.devx.com/projectcool/Article/19993">DevX</a></li>
+        </ul>
+
       <footer class="site-footer">
 
         <h6><span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span></h6>
