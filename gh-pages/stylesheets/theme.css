@@ -1,109 +1,82 @@
 /**
- * Dreamweaver theme
+ * Twilight theme
  *
- * @author Sean Coker
- * @url http://seancoker.com
- * @version 1.0
+ * Adapted from Michael Sheets' TextMate theme of the same name
+ *
+ * @author Michael Sheets
+ * @author Jesse Farmer <jesse@20bits.com>
+ * @version 1.0.1
  */
-
 pre {
-    /* original is white background with no border */
-    background-color: #fff;
+    background: #141414;
     word-wrap: break-word;
-    margin: 0;
+    margin: 0px;
     padding: 10px;
-    color: #000;
-    font-size: 13px;
-    line-height: 16px;
-    margin-bottom: 20px
+    color: #F8F8F8;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 pre, code {
-    font-family: monospace;
+    font-family: 'Monaco', courier, monospace;
 }
 
 pre .comment {
-    color: #888;
+    color: #5F5A60;
 }
 
-pre .support {
-    color: #cd57d5;
+pre .constant.numeric {
+    color: #D87D50;
 }
 
-pre .constant.numeric, pre .php.embedded {
-    color: #fa0002;
-    font-weight: bold;
+pre .constant {
+    color: #889AB4;
 }
 
-pre .keyword, pre .constant.language {
-    color: #000789;
-    font-weight: bold;
+pre .constant.symbol, pre .constant.language {
+    color: #D87D50;
 }
 
-pre .selector, pre .support.property, pre .entity.name.function {
-    color: #000;
-}
-
-pre .storage.function, pre .variable.self, pre .support.function, pre .constant.language {
-    color: #000;
-    font-weight: bold;
+pre .storage {
+    color: #F9EE98;
 }
 
 pre .string {
-    color: #0d43fa;
-    font-weight: normal;
+    color: #8F9D6A;
 }
 
-pre .css-property + span, pre .keyword.unit, pre .support.css-value {
-    color: #0d43fa !important;
-    font-weight: normal !important;
+pre .string.regexp {
+    color: #E9C062;
 }
 
-pre .entity.tag.style + .string, pre .php.embedded .constant.language, pre .php.embedded .keyword {
-    color: #37a348 !important;
+pre .keyword, pre .selector, pre .storage {
+    color: #CDA869;
 }
 
-pre .support.method {
-    color: #2bd5bb;
+pre .inherited-class {
+    color: #9B5C2E;
 }
 
-pre .entity.name {
-    color: #fd74e0;
+pre .entity {
+    color: #FF6400;
 }
 
-pre .support.css-property, pre .support.tag-name, pre .support.tag, pre .support.attribute, pre .support.attribute + .operator {
-    color: #000789;
+pre .support {
+    color: #9B859D;
 }
 
-pre .storage.module, pre .storage.class {
-    color: #122573;
-    font-weight: bold;
+pre .support.magic {
+    color: #DAD69A;
 }
 
-pre .css.embedded .support.tag, pre .css.embedded .style.tag {
-    color: #cd57d5;
+pre .variable {
+    color: #7587A6;
 }
 
-pre .keyword.operator {
-    color: #2852eb;
-    font-weight: normal;
+pre .function, pre .entity.class {
+    color: #9B703F;
 }
 
-pre .php.embedded .variable, pre .php.embedded .storage.function {
-     color: #0d43fa;
-     font-weight: normal;
-}
-
-pre .php.embedded .string, pre .js.embedded .tag.script {
-     color: #c4001e;
-}
-
-pre .php.embedded .comment {
-     color: #f4b441;
-     font-weight: normal;
-}
-
-pre .php.embedded .function.name {
-     color: #000;
-     font-weight: normal;
+pre .support.class-name, pre .support.type {
+    color: #AB99AC;
 }
