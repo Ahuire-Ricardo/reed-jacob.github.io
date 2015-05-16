@@ -1,16 +1,16 @@
 /**
- * Kimbie (Dark)
+ * Paraíso (Light)
  *
  * @author Jan T. Sott
  * @version 1.0.0
- * @url http://github.com/idleberg/Kimbie-Rainbow
+ * @url http://github.com/idleberg/Paraiso-Rainbow
  */
 pre {
-    background-color: #221a0f;
+    background-color: #e7e9db;
     word-wrap: break-word;
     margin: 0px;
     padding: 10px;
-    color: #fbebd4;
+    color: #2f1e2e;
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -20,29 +20,29 @@ pre, code {
 }
 
 pre .comment {
-    color: #a57a4c;
+    color: #8d8687;
 }
 
 pre .variable.global, pre .variable.class, pre .variable.instance {
-    color: #dc3958; /* red */
+    color: #ef6155; /* red */
 }
 
 pre .constant.numeric, pre .constant.language, pre .constant.hex-color, pre .keyword.unit {
-    color: #f79a32; /* orange */
+    color: #f99b15; /* orange */
 }
 
 pre .constant, pre .entity, pre .entity.class, pre .support {
-    color: #f06431; /* yellow */
+    color: #fec418; /* yellow */
 }
 
 pre .constant.symbol, pre .string {
-    color: #889b4a; /* green */
+    color: #48b685; /* green */
 }
 
 pre .entity.function, pre .support.css-property, pre .selector {
-    color: #8ab1b0; /* blue */
+    color: #06b6ef; /* blue */
 }
 
 pre .keyword, pre .storage {
-    color: #98676a; /* purple */
+    color: #815ba4; /* purple */
 }
