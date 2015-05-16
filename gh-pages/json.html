@@ -50,7 +50,7 @@ var info = '{"name":"Jacob Reed","street":"250 N. Rosemont Cir.","zip":"85206"}'
 // This parses our variable, "obj", as a string in JSON.
 var obj = JSON.parse(info);
 
-// Here we print out our object and it's separate values.
+// Here we print our object and its separate values (name, street, and zip).
 document.getElementById("demo").innerHTML =
 obj.name + "<br>" +
 obj.street + "<br>" +
@@ -74,10 +74,68 @@ obj.zip;</code></pre>
 
       <pre><code id="info">
       </code></pre>
+      <p>If we wanted to store more information we could create a JSON array. For example:</p>
+      <pre><code data-language="javascript">
+var names = [
+  {
+  "firstName":"Jacob",
+  "lastName":"Reed",
+  },
+  {
+  "firstName":"Michael",
+  "lastName":"Jordan",
+  },
+  {
+  "firstName":"George",
+  "lastName":"Washington"
+}
+];
+      </code></pre>
+
+      <h3>Output:</h3>
+        <script>
+        var names = [
+          {
+          "firstName":"Jacob",
+          "lastName":"Reed",
+          },
+          {
+          "firstName":"Michael",
+          "lastName":"Jordan",
+          },
+          {
+          "firstName":"George",
+          "lastName":"Washington"
+          }
+          ];
+          function printName1() {
+            document.getElementById("names").innerHTML =
+            employees[0].firstName + " " + employees[0].lastName;
+          }
+          function printName1() {
+            document.getElementById("names").innerHTML =
+            employees[1].firstName + " " + employees[1].lastName;
+          }
+          function printName1() {
+            document.getElementById("names").innerHTML =
+            employees[2].firstName + " " + employees[2].lastName;
+          }
+        </script>
+
+        <button onclick="printName1()">Click me (1st name)</button>
+        <button onclick="printName2()">Click me (2nd name)</button>
+        <button onclick="printName3()">Click me (3rd name)</button>
+
+        <pre><code id="names">
+        </code></pre>
+
+      <h2>How is JSON useful?</h2>
+      <p>JSON can easily be used to read data from a web server and then display it on a web page. w3schools.com has an example of how to accomplish this using <a href ="http://www.w3schools.com/xml/xml_http.asp">XMLHttp</a>. <a href="http://www.w3schools.com/json/json_http.asp">Click here</a> for more information. Additionally, w3schools.com hosts a page of JSON examples (one of which includes reading JSON data from a web server running PHP and MySQL). <a href="http://www.w3schools.com/json/json_example.asp">Click here</a> for more information.
 
       <h3>Sources:</h3>
         <ul>
-          <li><a href="http://www.w3schools.com/json/default.asp">W3 Schools</a></li>
+          <li><a href="http://www.w3schools.com/json/default.asp">W3 Schools - JSON Intro</a></li>
+          <li><a href="http://www.w3schools.com/json/json_http.asp">W3 Schools - JSON Http request</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON">Mozilla Developers</a></li>
         </ul>
 
