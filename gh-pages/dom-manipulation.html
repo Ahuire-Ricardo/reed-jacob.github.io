@@ -84,7 +84,39 @@ Hover Me!</a>
               <a href="#" onmouseover="" onMouseout="popup()">
             Hover Me!</a>
 
-        <p>More explanation.</p>
+        <p>Another simple example is using buttons to change the displayed image as well as display information. Let's take a look:</p>
+
+        <pre><code data-language="JavaScript">
+<img id="myImg" src="http://i.imgur.com/lwXzmHM.jpg">
+<br><br>
+<button onclick="document.getElementById('myImg').src='http://i.imgur.com/EN9I9vg.jpg'">Color</button>
+<button onclick="document.getElementById('myImg').src='http://i.imgur.com/lwXzmHM.jpg'">No Color</button>
+
+<button onclick="showSource()">Try it</button>
+<p id="demo"></p>
+<script>
+function showSource() {
+    var x = document.getElementById("myImg").src;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+        </code></pre>
+
+        <h3>Output:</h3>
+
+          <img id="myImg" src="http://i.imgur.com/lwXzmHM.jpg">
+          <br><br>
+          <button onclick="document.getElementById('myImg').src='http://i.imgur.com/EN9I9vg.jpg'">Color</button>
+          <button onclick="document.getElementById('myImg').src='http://i.imgur.com/lwXzmHM.jpg'">No Color</button><br>
+          <button onclick="showSource()">Try it</button>
+          <pre><code id="demo"></code></pre>
+
+          <script>
+          function showSource() {
+              var x = document.getElementById("myImg").src;
+              document.getElementById("demo").innerHTML = x;
+          }
+          </script>
 
         <h3>Sources:</h3>
         <ul>
