@@ -39,10 +39,29 @@
 
     <section class="main-content">
       <h1>CSS 3 Transitions and Transforms</h1>
-        <h6>May 9th, 2015</h6>
-
-        <p>Temp.</p>
-
+        <h6>May 20th, 2015</h6>
+        <h2>What is CSS?</h2>
+        <p>CSS (Cascading Style Sheets) is a style sheet langauge that is, most often, used to change the style of web pages and documents. CSS<strong>3</strong> is the latest standard for CSS.
+          While this page's contents will not explore all that CSS3 has to offer, it will display a two uses known as "transitions" and "transforms".</p>
+        <h3>CSS3 Transitions</h3>
+        <p>Simply put, CSS3 transitions provide a way to control animation speed when changing a particular CSS property. Instead of clicking a button and having immediate changes, the change will take place over a period of time (be it a few seconds or even a few minutes). Let's take a look at a simple example:</p>
+        <pre><code data-language="CSS">box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    -webkit-transition:width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition:width 2s, height 2s, background-color 2s, transform 2s;
+}
+.box:hover {
+    background-color: #FFCCCC;
+    width:200px;
+    height:200px;
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}</pre></code>
           <blockquote><p>Quoted text.</p>
           </blockquote>
           
