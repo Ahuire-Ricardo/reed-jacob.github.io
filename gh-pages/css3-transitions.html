@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>CSS3 Transitions</title>
+    <title>CSS3 Transitions and Transforms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -93,8 +93,61 @@
 <p>The transitions changed the color, the width and the height of our box. Pretty neat, eh? It is important to remember to specify the time in which a transition will take place. In this example, we specified that it would occur over the course of 2 seconds. If you don't set it or you set it to 0, the transition will occur instantaneously... which kind of defeats the purpose of these nifty transitions! For a comprehensive list on CSS transition properties, check <a href="http://www.w3.org/TR/css3-transitions/">w3.org</a>.</p>
 
 <h3>CSS3 Transforms</h3>
-        <p>CSS3 transforms allow for content displayed on HTML pages to be modified without actually making changes to the content. For example, one could rotate, skew, scale, and translate elements both in plane and in a 3d space. CSS transforms in 3d space is definitely a little more complicated and well beyond the scope of my course's requirements. For that reason, we'll be taking a look at simple transforms in a plane (2d).</p>
-        
+        <p>CSS3 transforms allow for content displayed on HTML pages to be modified without actually making changes to the content. For example, one could rotate, skew, scale, and translate elements both in plane and in a 3d space. CSS transforms in 3d space is definitely a little more complicated and well beyond the scope of my course's requirements. For that reason, we'll be taking a look at simple transforms in a plane (2d). Here is a simple example of transforming some boxes:</p>
+
+<style>
+#transform1 {
+  margin-bottom:20px;
+}
+#transform1 div:not(.clear) {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width:50px;
+  height:100px;
+  margin:10px 20px;
+  padding:10px;
+  border:1px black solid;
+  background-color: #0053A6;
+  color: #FFFFFF;
+  text-align: center;
+}
+#transform1 #skew {
+  -webkit-transform:skew(25deg);
+  -moz-transform:skew(25deg);
+  -ms-transform:skew(25deg);
+  transform:skew(25deg);
+}
+
+#transform1 #scale {
+  -webkit-transform:scale(2,1);
+  -moz-transform:scale(2,1);
+  -ms-transform:scale(2,1);
+  transform:scale(2,1);
+}
+
+#transform1 #rotate {
+  -webkit-transform:rotate(34deg);
+  -moz-transform:rotate(34deg);
+  -ms-transform:rotate(34deg);
+  transform:rotate(34deg);
+}
+
+#transform1 #translate {
+  -webkit-transform:translate(20px, 25px);
+  -moz-transform:translate(20px, 25px);
+  -ms-transform:translate(20px, 25px);
+  transform:translate(20px, 25px);
+}
+</style>
+
+<div id="transDemo1">
+  <div id="scale">Here we have scaled the box.</div>
+  <div id="skew">Here we have skewed the box.</div>
+  <div id="rotate">Here we have rotated the box.</div>
+  <div id="translate">Here we have translated the box.</div>
+  <div class="clear"></div>
+</div>
 
         <h3>Sources:</h3>
         <ul>
