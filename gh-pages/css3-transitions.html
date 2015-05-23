@@ -93,7 +93,7 @@
 <p>The transitions changed the color, the width and the height of our box. Pretty neat, eh? It is important to remember to specify the time in which a transition will take place. In this example, we specified that it would occur over the course of 2 seconds. If you don't set it or you set it to 0, the transition will occur instantaneously... which kind of defeats the purpose of these nifty transitions! For a comprehensive list on CSS transition properties, check <a href="http://www.w3.org/TR/css3-transitions/">w3.org</a>.</p>
 
 <h3>CSS3 Transforms</h3>
-        <p>CSS3 transforms allow for content displayed on HTML pages to be modified without actually making changes to the content. For example, one could rotate, skew, scale, and translate elements both in plane and in a 3d space. CSS transforms in 3d space is definitely a little more complicated and well beyond the scope of my course's requirements. For that reason, we'll be taking a look at simple transforms in a plane (2d). Here is a simple example of transforming some boxes:</p>
+        <p>CSS3 transforms allow for content displayed on HTML pages to be modified without actually making changes to the content. For example, one could rotate, skew, scale, and translate elements both in plane and in a 3d space. CSS transforms in 3d space is definitely a little more complicated and well beyond the scope of my course's requirements. For that reason, we'll be taking a look at simple transforms in a plane (2d). Here are some simple examples of transforms on boxes:</p>
 
 <style>
 #transform {
@@ -102,9 +102,9 @@
 #transform div:not(.clear) {
   border-style: solid;
   border:1px black solid;
-  width:90px;
-  height:125px;
-  margin:5px 15px;
+  width:115px;
+  height:145px;
+  margin:5px 10px;
   padding:5px;
   background-color: #0053A6;
   color: #FFFFFF;
@@ -146,7 +146,7 @@
   transform:scale(2,1);
 }
 </pre></code>
-<h3>Output:</h3>
+<h3>(Scale) Output:</h3>
 <div id="transform">
 <div id="scale">Scaled box</div>
 </div>
@@ -157,7 +157,7 @@
   -ms-transform:skew(45deg);
   transform:skew(45deg);
 }</pre></code>
-<h3>Output:</h3>
+<h3>(Skew) Output:</h3>
 <div id="transform">
 <div id="skew">Skewed box</div>
 </div>
@@ -168,7 +168,7 @@
   -ms-transform:rotate(34deg);
   transform:rotate(34deg);
 }</pre></code>
-<h3>Output:</h3>
+<h3>(Rotate) Output:</h3>
 <div id="transform">
 <div id="rotate">Rotated box</div>
 </div>
@@ -179,7 +179,7 @@
   -ms-transform:translate(5px, 25px);
   transform:translate(5px, 25px);
 }</pre></code>
-<h3>Output:</h3>
+<h3>(Translate) Output:</h3>
 <div id="transform">
 <div id="translate">Translated box</div>
 </div>
