@@ -53,7 +53,7 @@
 
 <!-- Time for some sloppy CSS -->
 <style>
-.slidein {
+.example1 {
       -moz-animation-duration: 3s;
       -webkit-animation-duration: 3s;
       -moz-animation-name: slidein;
@@ -64,7 +64,7 @@
       -webkit-animation-direction: alternate;
     }
     
-    @-moz-keyframes slidein {
+    @-moz-keyframes example1 {
       from {
         margin-left:100%;
         width:300%
@@ -76,7 +76,7 @@
       }
     }
     
-    @-webkit-keyframes slidein {
+    @-webkit-keyframes example1 {
       from {
         margin-left:100%;
         width:300%
@@ -88,7 +88,7 @@
       }
     }
 </style>
-<div class ="slidein">
+<div class ="example1">
   <h2>Here's the first example!</h2>
 </div>
 <pre><code data-language="css">.slidein {
@@ -126,6 +126,42 @@
       }
     }</code></pre>
 
+<style>
+.example2{
+  animation-duration: 2.5s; 
+  -webkit-animation-duration: 2.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes tossing {
+  0% {
+    transform: rotate(-4deg); 
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg); 
+  }           
+}
+
+@-webkit-keyframes tossing {
+  0% {
+    -webkit-transform: rotate(-4deg); 
+  }
+  50% {
+    -webkit-transform: rotate(4deg);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg); 
+  }       
+}
+</style>
+<div class="example2">
+  <img src="http://www.justinaguilar.com/animations/images/pin.png">
+</div>
         
       <footer class="site-footer">
 
