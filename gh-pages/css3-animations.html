@@ -38,11 +38,59 @@
     </section>
 
     <section class="main-content">
-      <h1>CSS 3 Animations</h1>
-        <h6>May 9th, 2015</h6>
+      <h1>CSS3 Animations</h1>
+        <h6>May 28th, 2015</h6>
+        <h2>Animations vs. Transitions</h2>
+        <p>CSS3 Animations share many similarities with our previous topic, transitions. 
+        For example, both specify properties to be changed, specify a duration to control how long a 
+        animation / transition will take, and visually change webpage properties in real time. The main difference 
+        between the two is the method in which these actions are triggered and the ability to loop. Transitions require 
+        some form of input from the user, be it pressing a button or hovering over something. Animations on the other 
+        hand can be set to start automatically and continue to play or "loop".</p>
+        <p>Transitions are best suited for simple from / to animations. Animations are best suited for more complex animations that include 
+        multiple keyframes (which are essentially points in which the animation changes). To get a better look at what properties can be animated, 
+        check here: <a href="http://www.w3.org/TR/css3-transitions/#properties-from-css-">w3.org</a>. To see some of these animations in action, let's take a look at some examples:</p>
 
-        <p>Temp.</p>
-
+<!-- Time for some sloppy CSS -->
+<style>
+.slidein {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+      -moz-animation-iteration-count: 3;
+      -webkit-animation-iteration-count: 3;
+      -moz-animation-direction: alternate;
+      -webkit-animation-direction: alternate;
+    }
+    
+    @-moz-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+    
+    @-webkit-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+</style>
+<div class ="slidein">
+  <h3>Here's the first example!</h3>
+</div>
           <blockquote><p>Quoted text.</p>
           </blockquote>
           
@@ -63,4 +111,3 @@
   
   </body>
 </html>
-
