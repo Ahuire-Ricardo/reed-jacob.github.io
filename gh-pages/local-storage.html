@@ -49,13 +49,60 @@
           </p>
         </blockquote>
           
-        <p>Let's utilize the window.localStorage object and store some information!:</p>
+        <p>Let's utilize the window.sessionStorage object and store some information temporarily! Here is our first provided example from the web:</p>
 
-          <pre><code>$ cd your_repo_root/repo_name
-          $ git fetch origin
-          $ git checkout gh-pages
-          </code></pre>
-        <p>More explanation.</p>
+
+          <pre><code data-language="javascript"><script type="text/javascript">
+  
+         if( sessionStorage.hits ){
+            sessionStorage.hits = Number(sessionStorage.hits) +1;
+         }else{
+            sessionStorage.hits = 1;
+         }
+         document.write("Total Hits : " + sessionStorage.hits );
+      </script></code></pre>
+
+       <h3>Output:</h3>
+
+        <script type="text/javascript">
+  
+         if( sessionStorage.hits ){
+            sessionStorage.hits = Number(sessionStorage.hits) +1;
+         }else{
+            sessionStorage.hits = 1;
+         }
+         document.write("Total Hits :" + sessionStorage.hits );
+      </script>
+  
+      <p>Refresh the page to increase number of hits.</p>
+      <p>Close the window and open it again and check the result.</p>
+
+      <p>Now we will try the same code but with the window.localStorage object to store information on a more long-term basis:</p>
+
+      <pre><code data-language="javascript"><script type="text/javascript">
+    
+         if( localStorage.hits ){
+            localStorage.hits = Number(localStorage.hits) +1;
+         }else{
+            localStorage.hits = 1;
+         }
+         document.write("Total Hits :" + localStorage.hits );
+      </script></code></pre>
+
+      <h3>Output:</h3>
+
+      <script type="text/javascript">
+    
+         if( localStorage.hits ){
+            localStorage.hits = Number(localStorage.hits) +1;
+         }else{
+            localStorage.hits = 1;
+         }
+         document.write("Total Hits : " + localStorage.hits );
+      </script>
+    
+      <p>Refresh the page to increase number of hits.</p>
+      <p>Close the window and open it again and check the result.</p>
         
       <footer class="site-footer">
 
