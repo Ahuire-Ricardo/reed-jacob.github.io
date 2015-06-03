@@ -53,14 +53,14 @@
 
 
           <pre><code data-language="javascript">if( sessionStorage.hits ){
-            sessionStorage.hits = Number(sessionStorage.hits) +1;
-         }else{
-            sessionStorage.hits = 1;
-         }
-         document.write("Total Hits: " + sessionStorage.hits );</code></pre>
+  sessionStorage.hits = Number(sessionStorage.hits) +1;
+} else {
+  sessionStorage.hits = 1;
+}
+document.write("Total Hits: " + sessionStorage.hits );</code></pre>
 
        <h3>Output:</h3>
-       <pre></code><script type="text/javascript">
+       <pre><script type="text/javascript">
   
          if( sessionStorage.hits ){
             sessionStorage.hits = Number(sessionStorage.hits) +1;
@@ -68,22 +68,21 @@
             sessionStorage.hits = 1;
          }
          document.write("Total Hits: " + sessionStorage.hits );
-      </script><p>Refresh the page to increase number of hits.<br>Close the window / tab and open it again and check the result.</p></code></pre>
-      
+      </script><p>Refresh the page to increase number of hits.<br>Close the window / tab and open it again and check the result.</p></pre>
+
       <hr>
 
       <p>Now we will try the same code but with the window.<strong>localStorage</strong> object to store information on a more long-term basis:</p>
 
-      <pre><code data-language="javascript">
-         if( localStorage.hits ){
-            localStorage.hits = Number(localStorage.hits) +1;
-         }else{
-            localStorage.hits = 1;
-         }
-         document.write("Total Hits: " + localStorage.hits );</code></pre>
+      <pre><code data-language="javascript">if( localStorage.hits ){
+  localStorage.hits = Number(localStorage.hits) +1;
+} else {
+  localStorage.hits = 1;
+}
+document.write("Total Hits: " + localStorage.hits );</code></pre>
 
       <h3>Output:</h3>
-      <pre><code><script type="text/javascript">
+      <pre><script type="text/javascript">
     
          if( localStorage.hits ){
             localStorage.hits = Number(localStorage.hits) +1;
@@ -91,7 +90,7 @@
             localStorage.hits = 1;
          }
          document.write("Total Hits: " + localStorage.hits );
-      </script><p>Refresh the page to increase number of hits.<br>Close the window / tab and open it again and check the result.</p></code></pre>
+      </script><p>Refresh the page to increase number of hits.<br>Close the window / tab and open it again and check the result.</p></pre>
         
       <footer class="site-footer">
 
