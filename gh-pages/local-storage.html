@@ -49,48 +49,40 @@
           </p>
         </blockquote>
           
-        <p>Let's utilize the window.sessionStorage object and store some information temporarily! Here is our first provided example from the web:</p>
+        <p>Let's utilize the window.<strong>sessionStorage</strong> object and store some information temporarily! Here is our first provided example from the web:</p>
 
 
-          <pre><code data-language="javascript"><script type="text/javascript">
-  
-         if( sessionStorage.hits ){
+          <pre><code data-language="javascript">if( sessionStorage.hits ){
             sessionStorage.hits = Number(sessionStorage.hits) +1;
          }else{
             sessionStorage.hits = 1;
          }
-         document.write("Total Hits : " + sessionStorage.hits );
-      </script></code></pre>
+         document.write("Total Hits: " + sessionStorage.hits );</code></pre>
 
        <h3>Output:</h3>
-
-        <script type="text/javascript">
+       <pre></code><script type="text/javascript">
   
          if( sessionStorage.hits ){
             sessionStorage.hits = Number(sessionStorage.hits) +1;
          }else{
             sessionStorage.hits = 1;
          }
-         document.write("Total Hits :" + sessionStorage.hits );
-      </script>
-  
-      <p>Refresh the page to increase number of hits.</p>
-      <p>Close the window and open it again and check the result.</p>
+         document.write("Total Hits: " + sessionStorage.hits );
+      </script><p>Refresh the page to increase number of hits.<br>
+      Close the window and open it again and check the result.</p></code></pre>
 
-      <p>Now we will try the same code but with the window.localStorage object to store information on a more long-term basis:</p>
+      <p>Now we will try the same code but with the window.<strong>localStorage</strong> object to store information on a more long-term basis:</p>
 
-      <pre><code data-language="javascript"><script type="text/javascript">
-    
+      <pre><code data-language="javascript">
          if( localStorage.hits ){
             localStorage.hits = Number(localStorage.hits) +1;
          }else{
             localStorage.hits = 1;
          }
-         document.write("Total Hits :" + localStorage.hits );
-      </script></code></pre>
+         document.write("Total Hits: " + localStorage.hits );</code></pre>
 
       <h3>Output:</h3>
-
+      <pre><code>
       <script type="text/javascript">
     
          if( localStorage.hits ){
@@ -98,11 +90,9 @@
          }else{
             localStorage.hits = 1;
          }
-         document.write("Total Hits : " + localStorage.hits );
-      </script>
-    
-      <p>Refresh the page to increase number of hits.</p>
-      <p>Close the window and open it again and check the result.</p>
+         document.write("Total Hits: " + localStorage.hits );
+      </script><p>Refresh the page to increase number of hits.<br>
+      Close the window and open it again and check the result.</p></code></pre>
         
       <footer class="site-footer">
 
