@@ -95,11 +95,17 @@ document.write("Total Hits: " + localStorage.hits );</code></pre>
 
       <hr>
 
-      <p>Let's not forget the all important clear button. :^) If you'd like to implement a way to clear the user's local storage, you can simply use this object:</p>
-      <pre><code data-language="javascript">window.localStorage.clear()</code></pre>
-      <button type="button" onclick="window.sessionStorage.clear()">Clear localStorage</button>
-      <p>After clicking this button, refresh your page to see the change in the localStorage hits counter above.</p>
-
+      <p>Let's not forget the all important clear button. :^) If you'd like to implement a way to clear the user's storage, you can simply use this object:</p>
+      <<blockquote>
+          <p>
+          window.sessionStorage<strong>.clear()</strong> (Clears session data)<br>
+          window.localStorage<strong>.clear()</strong> (Clears local data)
+          
+          </p>
+        </blockquote>
+      <p>As an example, click the button below to clear your desired storage location. After clicking, refresh the page to see the changes made to the counters above:</p>
+      <button type="button" onclick="window.sessionStorage.clear()">Clear sessionStorage</button><br>
+      <button type="button" onclick="window.localStorage.clear()">Clear localStorage</button>
 
       <h3>Sources:</h3>
         <ul>
