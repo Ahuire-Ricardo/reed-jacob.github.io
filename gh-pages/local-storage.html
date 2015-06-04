@@ -90,20 +90,20 @@ document.write("Total Hits: " + localStorage.hits );</code></pre>
          }else{
             localStorage.hits = 1;
          }
-         document.write("Total Hits: " + localStorage.hits );
+         document.write("<strong>Total Hits: " + localStorage.hits +"</strong>" );
       </script><p>Refresh the page to increase number of hits.<br>Close the window / tab and open it again and check the result.</p></pre>
 
       <hr>
 
       <p>Let's not forget the all important clear button. :^) If you'd like to implement a way to clear the user's storage, you can simply use this object:</p>
-      <<blockquote>
+      <blockquote>
           <p>
           window.sessionStorage<strong>.clear()</strong> (Clears session data)<br>
           window.localStorage<strong>.clear()</strong> (Clears local data)
           
           </p>
         </blockquote>
-      <p>As an example, click the button below to clear your desired storage location. After clicking, refresh the page to see the changes made to the counters above:</p>
+      <p>As an example, click the button below to clear your desired storage location. After clicking, refresh the page to see the changes made to the counters above.</p>
       <button type="button" onclick="window.sessionStorage.clear()">Clear sessionStorage</button><br>
       <button type="button" onclick="window.localStorage.clear()">Clear localStorage</button>
 
