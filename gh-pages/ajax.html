@@ -41,7 +41,7 @@
       <h1>AJAX</h1>
         <h6>June 12th, 2015</h6>
         <h2>What is "AJAX"?</h2>
-        <p>AJAX is a cleaning produc- okay, just kidding. AJAX stands for "<strong>A</strong>synchronous <strong>J</strong>avascript <strong>a</strong>nd <strong>X</strong>ML". AJAX allows the user to exchange data with the server and update certain parts of a web page without actually needing to refresh to see the results. w3schools.com provides us with a very simple example of how this can be implemented:</p>
+        <p>AJAX is a cleaning produc- okay, just kidding. AJAX stands for "<strong>A</strong>synchronous <strong>J</strong>avascript <strong>a</strong>nd <strong>X</strong>ML". AJAX allows the user to exchange data with the server and update certain parts of a web page without actually needing to refresh to see the results. <a href="http://www.w3schools.com/ajax/ajax_example.asp">w3schools.com</a> provides us with a very simple example of how this can be implemented:</p>
 
 
 <script>
@@ -63,7 +63,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","ajax_info.txt",true);
+xmlhttp.open("GET","ajax.txt",true);
 xmlhttp.send();
 }
 </script>
@@ -87,7 +87,7 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","ajax_info.txt",true);
+xmlhttp.open("GET","ajax.txt",true);
 xmlhttp.send();
 }
 </script></code></pre>
@@ -96,6 +96,11 @@ xmlhttp.send();
 <button type="button" onclick="loadXMLDoc()">Change Content</button>
 
 
+      <h3>Sources:</h3>
+        <ul>
+          <li><a href="http://www.w3schools.com/ajax/ajax_example.asp">W3 Schools - AJAX Example</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest">MDN - Using XMLHttpRequest</a></li>
+        </ul>
 
       <footer class="site-footer">
 
