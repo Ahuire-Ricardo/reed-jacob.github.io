@@ -1,2 +1,0 @@
-<h3>Abracadabra!</h3>
-<p>You are now viewing the content of "ajax_info.txt" which is hosted on this server. :^)</p>

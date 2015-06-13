@@ -1,0 +1,3 @@
+<h3>Abracadabra!</h3>
+<p>You are now viewing the content of "ajax_info.txt" which is hosted on this server. :^)<br>
+Click <a href="http://reed-jacob.github.io/gh-pages/ajax.txt">here</a> if you don't believe me!</p>
