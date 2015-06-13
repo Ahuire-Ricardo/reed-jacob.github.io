@@ -95,6 +95,65 @@ xmlhttp.send();
 <div id="myDiv"><p>Press the button below to change this text with <strong>AJAX</strong>.</p></div>
 <button type="button" onclick="loadXMLDoc()">Change Content</button>
         
+
+        <p>Trying some other code:</p>
+
+        <script>
+        "use strict";
+
+function ajaxSuccess() {
+    alert(this.responseText);
+}
+
+function AJAXSubmit(oFormElement) {
+    if (!oFormElement.action) {
+        return;
+    }
+    var oReq = new XMLHttpRequest();
+    oReq.onload = ajaxSuccess;
+    if (oFormElement.method.toLowerCase() === "post") {
+        oReq.open("post", oFormElement.action, true);
+        oReq.send(new FormData(oFormElement));
+    } else {
+        var oField, sFieldType, nFile, sSearch = "";
+        for (var nItem = 0; nItem < oFormElement.elements.length; nItem++) {
+            oField = oFormElement.elements[nItem];
+            if (!oField.hasAttribute("name")) {
+                continue;
+            }
+            sFieldType = oField.nodeName.toUpperCase() === "INPUT" ? oField.getAttribute("type").toUpperCase() : "TEXT";
+            if (sFieldType === "FILE") {
+                for (nFile = 0; nFile < oField.files.length; sSearch += "&" + escape(oField.name) + "=" + escape(oField.files[nFile++].name));
+            } else if ((sFieldType !== "RADIO" && sFieldType !== "CHECKBOX") || oField.checked) {
+                sSearch += "&" + escape(oField.name) + "=" + escape(oField.value);
+            }
+        }
+        oReq.open("get.txt", oFormElement.action.replace(/(?:\?.*)?$/, sSearch.replace(/^&/, "?")), true);
+        oReq.send(null);
+    }
+}
+</script>
+
+
+<h1>Sending forms with FormData</h1>
+
+
+<h2>Using the GET method</h2>
+
+<form action="register.php" method="get" onsubmit="AJAXSubmit(this); return false;">
+    <fieldset>
+        <legend>Registration example</legend>
+        <p>First name:
+            <input type="text" name="firstname" />
+            <br />Last name:
+            <input type="text" name="lastname" />
+        </p>
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </fieldset>
+</form>
+
       <footer class="site-footer">
 
         <h6><span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span></h6>
@@ -105,4 +164,3 @@ xmlhttp.send();
   
   </body>
 </html>
-
