@@ -1,0 +1,86 @@
+// From Cody House
+body, html, main {
+	height: 100%;
+}
+
+// Foundation sass was too confusing to find out where this was being styled
+.top-bar strong {
+	color: white;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+	font-family: 'Roboto Slab', serif;
+	font-size: 23px;
+	padding-left: .5em;
+}
+
+// Colors
+$bb-1: #2f6c5a; // Green
+$bb-2: #a46528; // Brown
+$bb-3: #6c6a6b; // Gray
+$bb-4: #3b285b; // Purple
+$bb-5: #95a49f; // Silver
+
+// General styling
+.bb-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	h1 {
+		color: white;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+		font-family: 'Roboto Slab', serif;
+		font-size: 54px;
+	}
+	.medium-12 {
+		text-align: center;
+		margin-top: 200px;
+	}
+}
+
+.bb-scrolling-bg.bb-color-1 {
+	background-color: $bb-1;
+}
+.bb-scrolling-bg.bb-color-2 {
+	background-color: $bb-2;
+}
+.bb-scrolling-bg.bb-color-3 {
+	background-color: $bb-3;
+}
+.bb-scrolling-bg.bb-color-4 {
+	background-color: $bb-4;
+}
+.bb-scrolling-bg.bb-color-5 {
+	background-color: $bb-5;
+}
+
+.bb-fixed-bg.bb-bg-1 {
+  background-image: url("../img/bb-background-1.jpg");
+}
+.bb-fixed-bg.bb-bg-2 {
+  background-image: url("../img/bb-background-2.jpg");
+}
+.bb-fixed-bg.bb-bg-3 {
+  background-image: url("../img/bb-background-3.jpg");
+}
+.bb-fixed-bg.bb-bg-4 {
+  background-image: url("../img/bb-background-4.jpg");
+}
+.bb-fixed-bg.bb-bg-5 {
+  background-image: url("../img/bb-background-5.jpg");
+}
+
+.bb-scrolling-bg {
+	min-height: 60%;
+	p {
+		margin: auto;
+		width: 60%;
+		color: white;
+		font-size: 20px;
+		line-height: 2;
+		margin-bottom: 50px;
+	}
+	.large-10 {
+		margin-top: 50px;
+	}
+}
